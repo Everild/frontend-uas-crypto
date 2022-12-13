@@ -1,5 +1,6 @@
-import React from 'react'
-import picmenu from './img/picmenu.svg'
+import React, { useState, useEffect} from 'react';
+import axios from 'axios'
+import picmenu from '../assets/picmenu.svg'
 
 export const Menu = () => {
   return (
@@ -7,7 +8,7 @@ export const Menu = () => {
         <div class="mx-auto">
             <img src={picmenu} alt="" />
         </div>
-        <div class="flex flex-col space-y-3 px-10">
+        <div className="flex flex-col space-y-3 px-10">
                 <h1 class="text-white font-bold text-[26px] text-left sm:text-[26px] xl:text-[20px] lg:text-left lg:">
                 ketahui lebih lengkap mengenai komponen pc <br></br> yang akan di beli
                 </h1>
@@ -15,3 +16,4 @@ export const Menu = () => {
     </div>
   )
 }
+
